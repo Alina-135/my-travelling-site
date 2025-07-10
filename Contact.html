@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <style>
+            input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #24516e; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 12px; 
+  margin-bottom: 12px;
+  resize: vertical; 
+}
+input,select,textarea{
+    background:lavender ;
+    color: black; 
+   }
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: darkslategray;
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(19, 199, 223);
+}
+
+/*  some padding around the form */
+.container-c {
+  border-radius: 5px;
+  padding: 70px;
+}
+.container-c a {
+	border: 2px solid rgb(67, 77, 77);
+	padding: 10px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	margin-top: 20px;
+	display: inline-block;
+	color: black;
+}
+.container-c a:hover {
+	background: rgb(19, 199, 223);
+	color: #333;
+}
+
+        </style>
+    </head>
+<body>
+    <nav id="navBar" class="navBar-color">
+        <img src="images/logo.png" class="logo">
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Online Pack.html">Online Pack</a></li>
+            <li><a href="About.html">About Us</a></li>
+         </ul>
+         <a href="Contact.html" class="register-btn">Register Now</a>
+    </nav>
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a>  /  Contact Us</span>
+          <h3>Contact Us</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container-c">
+  <form>
+
+    <label>First Name</label>
+    <input type="text" name="firstname" placeholder="Your name.." required>
+
+    <label>Last Name</label>
+    <input type="text" name="lastname" placeholder="Your last name.." required>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+       <option value="india">India</option>
+      <option value="newzealand">New Zealand</option>
+      <option value="Africa">Africa</option> 
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<a href="Last-page.html">Submit</a>
+</form>
+</div>
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+    <hr>
+    <p>Copyright @ 2023, Alina</p>
+    </div>
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+        </script>
+</body>
+</html>
